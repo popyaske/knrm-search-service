@@ -1,0 +1,25 @@
+# FastAPI и зависимости
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.4.2
+pydantic-settings==2.0.3
+
+# Определение языка
+langdetect==1.0.9
+
+# Установка FAISS на GPU
+faiss-cpu==1.13.2
+
+# NLTK для работы с текстом
+nltk==3.8.1
+
+# PyTorch (для GPU)
+#torch==2.10.0
+
+# PyTorch (для GPU)
+torch==2.2.0
+
+# Зависимости
+pandas==3.0.1
+setuptools>=68.0.0
+wheel>=0.41.0
