@@ -85,20 +85,24 @@ open http://localhost:11000/ping
 
 ```
 knrm-search-service/
-├── main.py # Основной файл сервиса (FastAPI)
-├── knrm_mlp.bin # Веса MLP части модели
 ├── requirements.txt # Зависимости
 ├── Dockerfile # Конфигурация Docker
 ├── src/
 │ ├── init.py
-│ ├── config/
-│ │ └── project_config.py # Конфигурация проекта
+│ ├── main.py # Основной файл сервиса (FastAPI)
+│ └── config/
+│   └── project_config.py # Конфигурация проекта
+├── data/
+│ ├── glove/
+│ │ └── glove_dict.pkl
+│ ├── vocab/
+│ │ └── vocab.json
 │ ├── models/
-│ │ ├── knrm.py # Реализация KNRM
-│ │ ├── glove_vectorizer.py
-│ │ └── searcher.py
-│ └── utils/
-│ └── preprocessing.py
+│ │ ├── emb_knrm.pkl
+│ │ └── mlp_weights.pkl
+│ └── QQP/
+│   ├── dev.tsv
+│   └── train.tsv
 └── README.md
 ```
 
