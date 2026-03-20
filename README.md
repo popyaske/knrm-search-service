@@ -81,7 +81,7 @@ curl http://localhost:11000/ping
 open http://localhost:11000/ping
 ```
 
-### 📋 Структура проекта
+## 📋 Структура проекта
 
 knrm-search-service/
 ├── main.py                   # Основной файл сервиса (FastAPI)
@@ -100,7 +100,7 @@ knrm-search-service/
 │       └── preprocessing.py
 └── README.md
 
-### 🔧 API Эндпоинты
+## 🔧 API Эндпоинты
 
 | Метод | Эндпоинт | Описание |
 |-------|----------|----------|
@@ -108,15 +108,15 @@ knrm-search-service/
 | POST | `/update_index` | Обновление FAISS индекса |
 | POST | `/query` | Поиск похожих вопросов |
 
-### Примеры запросов
+## Примеры запросов
 
 
-# 1. Проверка статуса
+### 1. Проверка статуса
 ```bash
 curl http://localhost:11000/ping
 ```
 
-# 2. Обновление индекса
+### 2. Обновление индекса
 ```bash
 curl -X POST http://localhost:11000/update_index \
   -H "Content-Type: application/json" \
@@ -129,7 +129,7 @@ curl -X POST http://localhost:11000/update_index \
   }'
 ```
 
-# 3. Поиск похожих вопросов
+### 3. Поиск похожих вопросов
 ```bash
 curl -X POST http://localhost:11000/query \
   -H "Content-Type: application/json" \
@@ -141,7 +141,7 @@ curl -X POST http://localhost:11000/query \
   }'
 ```
 
-### 📝 Примечания
+## 📝 Примечания
 - Сервис инициализируется до 120 секунд. /ping вернет status: "ok" только после полной загрузки.
 
 - Индекс строится до 200 секунд через эндпоинт /update_index
