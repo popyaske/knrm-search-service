@@ -43,6 +43,12 @@ venv\Scripts\activate  # Windows
 
 # Установка зависимостей
 pip install -r requirements.txt
+
+# Скачивание GloVe
+wget https://nlp.stanford.edu/data/glove.6B.zip
+mkdir -p glove
+unzip glove.6B.zip -d glove/
+rm glove.6B.zip
 ```
 
 ### Запуск сервиса
