@@ -37,18 +37,26 @@ cd knrm-search-service
 
 # Создание виртуального окружения
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
+source venv/bin/activate  ## Linux/Mac
 # или
-venv\Scripts\activate  # Windows
+venv\Scripts\activate  ## Windows
 
 # Установка зависимостей
 pip install -r requirements.txt
 
 # Скачивание GloVe
+
+## Linux/Mac
 wget https://nlp.stanford.edu/data/glove.6B.zip
 mkdir -p glove
 unzip glove.6B.zip -d glove/
 rm glove.6B.zip
+
+## Windows
+curl -L -o glove.6B.zip https://nlp.stanford.edu/data/glove.6B.zip
+mkdir glove
+tar -xf glove.6B.zip -C glove/
+del glove.6B.zip
 ```
 
 ### Запуск сервиса
