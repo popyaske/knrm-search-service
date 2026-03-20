@@ -83,22 +83,24 @@ open http://localhost:11000/ping
 
 ## 📋 Структура проекта
 
+```
 knrm-search-service/
-├── main.py                   # Основной файл сервиса (FastAPI)
-├── knrm_mlp.bin             # Веса MLP части модели
-├── requirements.txt          # Зависимости
-├── Dockerfile               # Конфигурация Docker
+├── main.py # Основной файл сервиса (FastAPI)
+├── knrm_mlp.bin # Веса MLP части модели
+├── requirements.txt # Зависимости
+├── Dockerfile # Конфигурация Docker
 ├── src/
-│   ├── __init__.py
-│   ├── config/
-│   │   └── project_config.py  # Конфигурация проекта
-│   ├── models/
-│   │   ├── knrm.py           # Реализация KNRM
-│   │   ├── glove_vectorizer.py
-│   │   └── searcher.py
-│   └── utils/
-│       └── preprocessing.py
+│ ├── init.py
+│ ├── config/
+│ │ └── project_config.py # Конфигурация проекта
+│ ├── models/
+│ │ ├── knrm.py # Реализация KNRM
+│ │ ├── glove_vectorizer.py
+│ │ └── searcher.py
+│ └── utils/
+│ └── preprocessing.py
 └── README.md
+```
 
 ## 🔧 API Эндпоинты
 
