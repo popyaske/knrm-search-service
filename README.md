@@ -103,8 +103,7 @@ knrm-search-service/
 │ ├── 🧠 emb_knrm.pkl # Обученные KNRM эмбеддинги
 │ └── ⚖️ mlp_weights.pkl # Веса MLP слоев
 └── 📂 QQP/
-├── 📊 dev.tsv # Валидационные данные
-└── 📈 train.tsv # Обучающие данные
+└── 📊 dev.tsv # тренировочные данные
 ```
 
 ## 🔧 API Эндпоинты
