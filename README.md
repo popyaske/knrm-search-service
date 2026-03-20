@@ -43,3 +43,13 @@ venv\Scripts\activate  # Windows
 
 # Установка зависимостей
 pip install -r requirements.txt
+
+### Запуск сервиса
+
+# Запуск через Uvicorn (рекомендуется)
+python -m uvicorn main:app --host 127.0.0.1 --port 11000 --reload
+
+# Или напрямую
+python main.py
+
+### Запуск через Docker
