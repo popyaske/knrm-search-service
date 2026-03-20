@@ -43,8 +43,8 @@ venv\Scripts\activate  # Windows
 
 # Установка зависимостей
 pip install -r requirements.txt
+```
 
-```markdown
 ### Запуск сервиса
 
 ```bash
